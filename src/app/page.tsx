@@ -5,16 +5,19 @@ import {Footer} from '@/components/Footer';
 
 export default function HomePage() {
 	return (
-		<div className={styles.HomePage}>
+		<>
 			<NavBar />
-      hola <br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
+			<div className={styles.HomePage}>
+				hola
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
 
+			</div>
 			<Footer/>
-		</div>
+		</>
 	);
 }

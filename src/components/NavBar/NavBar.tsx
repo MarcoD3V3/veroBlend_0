@@ -1,4 +1,6 @@
 'use client';
+import {AiFillHome} from 'react-icons/ai';
+import {AiTwotoneBell} from 'react-icons/ai';
 import React, {useState} from 'react';
 import Link from 'next/link';
 import styles from './NavBar.module.scss';
@@ -18,10 +20,10 @@ const NavBar = () => {
 				<div className={`${styles.menu} ${isMenuOpen ? styles.open : ''}`}>
 					<ul className={styles.navLinks}>
 						<li>
-							<Link href="/">Home</Link>
+							<Link href="/">Home<AiFillHome/></Link>
 						</li>
 						<li>
-							<Link href="/About">About</Link>
+							<Link href="/About">About<AiTwotoneBell/></Link>
 						</li>
 						<li>
 							<Link href="/Services">Services</Link>

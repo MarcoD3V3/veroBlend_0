@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import {FaTwitter, FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn, FaSpotify} from 'react-icons/fa';
 
 import styles from './Footer.module.scss';
 
@@ -33,7 +34,7 @@ const Footer = () => {
 						<h3 className={styles.columnTitle}>Recursos</h3>
 						<ul className={styles.navLinks}>
 							<li>
-								<Link href="/blog">Blog</Link>
+								<Link href="/Resources/blog">Blog</Link>
 							</li>
 							<li>
 								<Link href="/faq">FAQ</Link>
@@ -62,9 +63,12 @@ const Footer = () => {
 						<h3 className={styles.columnTitle}>Síguenos</h3>
 						<div className={styles.socialMedia}>
 							{/* Aquí puedes agregar tus enlaces a las redes sociales */}
-							<a href="https://twitter.com">Twitter</a>
-							<a href="https://facebook.com">Facebook</a>
-							<a href="https://instagram.com">Instagram</a>
+							<a href="https://twitter.com" target="_blank" rel="noreferrer" ><FaTwitter/></a>
+							<a href="https://facebook.com" target="_blank" rel="noreferrer" ><FaFacebookF/></a>
+							<a href="https://instagram.com" target="_blank" rel="noreferrer" ><FaInstagram/></a>
+							<a href="https://www.github.com" target="_blank" rel="noreferrer" ><FaGithub/></a>
+							<a href="https://www.linkedinin.com" target="_blank" rel="noreferrer" ><FaLinkedinIn/></a>
+							<a href="https://www.spotify.com" target="_blank" rel="noreferrer" ><FaSpotify/></a>
 						</div>
 					</div>
 				</div>
