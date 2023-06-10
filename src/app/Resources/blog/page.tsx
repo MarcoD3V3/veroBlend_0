@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Blog.module.scss';
-import {NavBar} from '@/components/NavBar';
+import {NavBar, Footer} from '@/components';
 
 export default function BlogPage() {
 	return (
@@ -9,6 +9,7 @@ export default function BlogPage() {
 			<div className={styles.BlogPage}>
         blog
 			</div>
+			<Footer/>
 		</>
 	);
 }
