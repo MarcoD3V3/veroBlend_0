@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './About.module.scss';
 import {NavBar} from '@/components/NavBar';
 
-export default function About() {
+export default function AboutPage() {
 	return (
 		<>
 			<NavBar/>
