@@ -7,7 +7,7 @@ import {AiFillHome, AiTwotoneBell} from 'react-icons/ai';
 import {IoPeopleSharp, IoHandLeft} from 'react-icons/io5';
 import {VscMenu, VscChromeClose} from 'react-icons/vsc';
 import Link from 'next/link';
-import styles from './navBar.module.scss';
+import styles from './NavBar.module.scss';
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(true);
