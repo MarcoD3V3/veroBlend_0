@@ -1,6 +1,11 @@
-.HomePage{
+.HomePage {
     background-color: #222;
     padding: 10px;
     height: 40rem;
     width: 100%;
+    background-image: url('/fondo.jpg');
+    background-position: center 0;
+    background-size: cover;
+    position: relative;
+    user-select: none;
 }

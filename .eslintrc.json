@@ -31,6 +31,9 @@
         "arrow-body-style": "off",
         "@typescript-eslint/indent": "off",
         "react/react-in-jsx-scope": "off",
-        "new-cap": "off"
+        "new-cap": "off",
+        "@typescript/rules/quotes": "off",
+        "@typescript-eslint/restrict-template-expressions": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off"
     }
 }
