@@ -10,8 +10,8 @@ import Link from 'next/link';
 import styles from './NavBar.module.scss';
 
 const NavBar = () => {
-  const [menuOpen, setMenuOpen] = useState(true);
-	const [menuBurguerVisible, setMenuBurguerVisible] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+	const [menuBurguerVisible, setMenuBurguerVisible] = useState(true);
 
   const toggleMenu = () => {
 		const menuBurger = document.querySelector('#menuBurger');
