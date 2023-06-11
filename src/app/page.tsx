@@ -11,6 +11,7 @@ export default function HomePage() {
 				hola
 				<br />
 				<br />
+				<video src='/v.mp4' width={320} height={320} controls></video>
 				<br />
 				<br />
 				<br />

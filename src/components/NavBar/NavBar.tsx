@@ -7,6 +7,7 @@ import {AiFillHome, AiTwotoneBell} from 'react-icons/ai';
 import {IoPeopleSharp, IoHandLeft} from 'react-icons/io5';
 import {VscMenu, VscChromeClose} from 'react-icons/vsc';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './NavBar.module.scss';
 
 const NavBar = () => {
@@ -25,7 +26,14 @@ const NavBar = () => {
 			<div className={styles.NavBar}>
 				<nav className={styles.navbar}>
 					<div className={styles.logo}>
-						<Link href="/">Logo</Link>
+						<Link href="/">
+							<Image
+							src='/logo.png'
+							width={50}
+							height={50}
+							alt="Picture of the author"
+							/>
+						</Link>
 					</div>
 					<div className={`${styles.menu} ${menuOpen ? styles.open : ''}`}>
 						<ul className={styles.navLinks}>
