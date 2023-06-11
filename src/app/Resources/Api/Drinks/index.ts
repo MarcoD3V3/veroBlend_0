@@ -1,1 +1,1 @@
-export {default as Drinks} from './Drinks';
+export {default as Drinks} from './page';
