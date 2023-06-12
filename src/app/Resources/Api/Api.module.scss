@@ -1,3 +1,26 @@
 .api {
-  
+  padding: 40px 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 82%;
+  text-align: center;
+
+  h1 {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 150%;
+  }
+
+  p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70%;
+  }
 }

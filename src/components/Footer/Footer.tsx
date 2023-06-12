@@ -45,6 +45,9 @@ const Footer = () => {
 							<li>
 								<Link href="/Resources/privacy">Privacy Policy</Link>
 							</li>
+							<li>
+								<Link href="/Resources/Api">API</Link>
+							</li>
 						</ul>
 					</div>
 					<div className={styles.column}>
