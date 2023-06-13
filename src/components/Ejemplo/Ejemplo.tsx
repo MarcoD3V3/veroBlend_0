@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/indent */
 import React from 'react';
 import styles from './Ejemplo.module.scss';
+import Image from 'next/image';
 
 type Testimonial = {
   id: number;
@@ -70,7 +71,7 @@ const Ejemplo: React.FC = () => {
 				<br />
         <section className={styles['photo-paragraph']}>
           <div className={styles.photo}>
-            <img src="/logo.png" alt="Foto 1" />
+            <Image src="/logo.png" alt="Foto 1" width={100} height={100} />
           </div>
           <div className={styles.paragraph}>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non nobis maxime odit itaque molestias fuga harum. Amet delectus facilis, maxime hic eligendi perferendis officiis, odit quae et tenetur laboriosam eaque!</p>
@@ -81,12 +82,12 @@ const Ejemplo: React.FC = () => {
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius deserunt minus esse quo, repellendus, eligendi dignissimos inventore, exercitationem accusantium molestiae assumenda a voluptates quidem pariatur porro aspernatur praesentium aliquam nobis!</p>
           </div>
           <div className={styles.photo}>
-            <img src="/logo.png" alt="Foto 2" />
+            <Image src="/logo.png" alt="Foto 2" width={100} height={100}/>
           </div>
         </section>
         <section className={styles['photo-paragraph']}>
           <div className={styles.photo}>
-            <img src="/logo.png" alt="Foto 3" />
+            <Image src="/logo.png" alt="Foto 3" width={100} height={100} />
           </div>
           <div className={styles.paragraph}>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus, voluptates molestias numquam nemo quam, doloremque delectus eveniet voluptatibus odit maxime placeat odio cumque magnam tempora in, laudantium repudiandae! Quo?</p>
@@ -97,7 +98,7 @@ const Ejemplo: React.FC = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, error voluptatem minima non rem, odio laborum illo nulla magni at tempore ducimus? At error maiores alias iure voluptate hic quaerat?</p>
           </div>
           <div className={styles.photo}>
-            <img src="/logo.png" alt="Foto 4" />
+            <Image src="/logo.png" alt="Foto 4" width={100} height={100} />
           </div>
         </section>
 				<section className={styles.section}>
