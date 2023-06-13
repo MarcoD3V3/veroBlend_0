@@ -2,7 +2,7 @@
   transition: ease-in-out 2000ms;
   width: 100%;
   height: auto;
-  background-color: #232946;
+  background-color: #333;
   color: #333;
   display: flex;
   justify-content: center;
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #232946;
+    background-color: #333;
     padding: 20px;
     color: #fff;
     height: 60px;
@@ -62,6 +62,19 @@
 
           &:hover {
             color: #ff5e5e;
+          }
+        }
+
+      }
+
+      .getStarted {
+        background-color: lightcoral;
+        padding: 2px 10px;
+        border-radius: 5px;
+
+        a {
+          &:hover {
+            color: #333 !important;
           }
         }
       }
@@ -147,6 +160,19 @@
           width: 100%;
           display: flex;
           justify-content: center;
+        }
+      }
+    }
+
+    .Burger_getStarted {
+      background-color: lightcoral;
+      padding: 2px;
+      border-radius: 5px;
+
+
+      a {
+        &:hover {
+          color: #333 !important;
         }
       }
     }

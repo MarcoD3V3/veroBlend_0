@@ -1,11 +1,38 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/restrict-plus-operands */
+/* eslint-disable @typescript-eslint/no-unsafe-return */
 import React from 'react';
 import Link from 'next/link';
 import {FaTwitter, FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn, FaSpotify} from 'react-icons/fa';
-
 import styles from './Footer.module.scss';
 import Image from 'next/image';
 
-const Footer = () => {
+type InterfaceProps = {
+	nameFirstRow: string;
+	item1: string;
+	item2: string;
+	item3: string;
+	item4: string;
+	item5: string;
+	item6: string;
+};
+
+const Footer: React.FC<InterfaceProps> = props => {
+	function AllLetter(str: any) {
+		return str.toLowerCase();
+	}
+
+	function FirstLetter(str: any) {
+		return str[0].toUpperCase() + str.substring(1);
+	}
+
+	const myItem1: string = props.item1;
+	const myItem2: string = props.item2;
+	const myItem3: string = props.item3;
+	const myItem4: string = props.item4;
+	const myItem5: string = props.item5;
+	const myItem6: string = props.item6;
+
 	return (
 		<div className={styles.Footer}>
 			<footer className={styles.footer}>
@@ -16,26 +43,30 @@ const Footer = () => {
 						<Link href="/"><Image src="/logo.png" width={150} height={150} alt='mas'/></Link>
 					</div>
 					<div className={styles.column}>
-						<h3 className={styles.columnTitle}>Explorar</h3>
+						<h3 className={styles.columnTitle}>{props.nameFirstRow}</h3>
 						<ul className={styles.navLinks}>
 							<li>
-								<Link href="/">Home</Link>
+								<Link href={myItem1} >{FirstLetter(props.item1)}</Link>
 							</li>
 							<li>
-								<Link href="/About">About</Link>
+								<Link href={myItem2} >{FirstLetter(props.item2)}</Link>
 							</li>
 							<li>
-								<Link href="/Services">Services</Link>
+								<Link href={myItem3} >{FirstLetter(props.item3)}</Link>
 							</li>
 							<li>
-								<Link href="/Contact">Contact</Link>
+								<Link href={myItem4} >{FirstLetter(props.item4)}</Link>
+							</li>
+							<li>
+								<Link href={myItem5} >{FirstLetter(props.item5)}</Link>
+							</li>
+							<li>
+								<Link href={myItem6} >{FirstLetter(props.item6)}</Link>
 							</li>
 						</ul>
 					</div>
 					<div className={styles.column}>
-						<h3 className={styles.columnTitle}>
-							<Link href='/Resources'>Recursos</Link>
-						</h3>
+						<h3 className={styles.columnTitle}>Recursos</h3>
 						<ul className={styles.navLinks}>
 							<li>
 								<Link href="/Resources/blog">Blog</Link>

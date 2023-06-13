@@ -1,7 +1,6 @@
 
 import styles from './homePage.module.scss';
-import {NavBar} from '@/components/';
-import {Footer} from '@/components/';
+import {NavBar, Footer, VerURL} from '@/components/';
 import Image from 'next/image';
 import {ParalaxEjem} from './Z-components/ParalaxEjem';
 
