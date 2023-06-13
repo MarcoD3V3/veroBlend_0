@@ -1,5 +1,4 @@
-/* eslint-disable arrow-parens */
-/* eslint-disable @typescript-eslint/indent */
+
 'use client';
 import React, {useState} from 'react';
 import styles from './ProjectsPage.module.scss';
