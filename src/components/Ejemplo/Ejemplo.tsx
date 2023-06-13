@@ -40,8 +40,8 @@ const Ejemplo: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <header>
-        <h1>{title}</h1>
+      <header className={styles.header}>
+        <h1 className={styles.title}>{title}</h1>
       </header>
       <main>
         <section className={styles.section}>
