@@ -5,7 +5,6 @@ export default function ProjectsPage() {
 	return (
 		<div className={styles.summary}>
 			ProjectsPage
-			
 		</div>
 	);
 }
