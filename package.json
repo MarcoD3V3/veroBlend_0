@@ -18,7 +18,7 @@
     "autoprefixer": "10.4.14",
     "boxicons": "^2.1.4",
     "emacs": "^0.0.1",
-    "eslint": ">=8.0.0",
+    "eslint": "^8.0.0",
     "eslint-config-next": "13.4.4",
     "mc": "^1.0.6",
     "next": "13.4.4",

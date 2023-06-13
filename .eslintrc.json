@@ -5,6 +5,7 @@
         "node": true
     },
     "extends": [
+        "next",
         "xo",
         "plugin:react/recommended"
     ],
