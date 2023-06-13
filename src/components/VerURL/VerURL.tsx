@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/indent */
-/* eslint-disable no-negated-condition */
 /* eslint-disable @typescript-eslint/naming-convention */
 'use client';
 import React, {useState, useEffect} from 'react';
