@@ -1,1 +1,1 @@
-export { default as Ejemplo } from './Ejemplo';
+export {default as Ejemplo} from './Ejemplo';

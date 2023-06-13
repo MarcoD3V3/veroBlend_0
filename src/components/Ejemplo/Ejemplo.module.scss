@@ -10,7 +10,7 @@
     }
   }
 
-  main {
+  .main {
     .section {
       margin-bottom: 40px;
 
@@ -27,11 +27,13 @@
       ul {
         margin-bottom: 10px;
         padding-left: 20px;
+
+        li {
+          margin-bottom: 5px;
+        }
       }
 
-      li {
-        margin-bottom: 5px;
-      }
+
     }
 
     .photo-paragraph {

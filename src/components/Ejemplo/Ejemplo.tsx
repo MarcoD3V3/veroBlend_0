@@ -43,7 +43,7 @@ const Ejemplo: React.FC = () => {
       <header className={styles.header}>
         <h1 className={styles.title}>{title}</h1>
       </header>
-      <main>
+      <main className={styles.main}>
         <section className={styles.section}>
           <h2>Descripción</h2>
           <p>{description}</p>
