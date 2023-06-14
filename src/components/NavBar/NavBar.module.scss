@@ -2,17 +2,18 @@
   transition: ease-in-out 2000ms;
   width: 100%;
   height: auto;
-  background-color: #232946;
+  backdrop-filter: blur(15px);
   color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed !important;
+  z-index: 100;
 
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #232946;
     padding: 20px;
     color: #fff;
     height: 60px;

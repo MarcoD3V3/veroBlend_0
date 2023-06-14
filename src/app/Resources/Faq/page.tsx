@@ -6,7 +6,7 @@ export default function FaqPage() {
 	return (
 		<>
 			<NavBar/>
-			<div className={styles.faq}>
+			<div className={styles.FaqPage}>
 				Faq
 			</div>
 		</>

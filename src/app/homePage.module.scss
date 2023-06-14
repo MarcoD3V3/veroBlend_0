@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 @keyframes mymove {
     0% {
         transform: translateY(0) rotate(0);
@@ -12,10 +14,112 @@
     }
 }
 
+$color-secundario: #0008;
+$color-neon: #fff;
+$color-principal: #232946;
+$neon-colors: #ff0066, #00ff99, #ffcc00, #6600ff; // Colores de neón disponibles
+$paddingLeft: 60px;
+
+.Intro {
+    width: 100%;
+    height: 50rem;
+    background: rgb(35, 41, 70);
+    background: linear-gradient(to bottom, $color-principal, darken($color-principal, 10%));
+    // display: flex;
+    padding-top: 65px;
+
+    .containerIntro {
+        display: flex;
+        // align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 100%;
+
+
+        .headingIntro {
+            padding-top: 45px;
+            // display: flex;
+            // align-items: start;
+            // justify-content: center;
+            width: 50%;
+
+            .textHeading {
+                width: 100%;
+                font-size: 140px;
+                padding-left: $paddingLeft;
+                position: relative;
+                // font-weight: bold;
+                font-family: 'Anton',
+                    sans-serif;
+
+                .learning {
+                    position: absolute;
+                    letter-spacing: 1px;
+                    top: -4px;
+                    left: 0px;
+                    width: 100%;
+                    padding-left: $paddingLeft;
+                    font-size: 25px;
+                }
+            }
+
+            .textLorem {
+                padding-left: $paddingLeft;
+                font-size: 20px;
+                width: 100%;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            .buttonsContainer {
+                width: 100%;
+                padding-left: $paddingLeft;
+                padding-top: 40px;
+                display: flex;
+                gap: 20px;
+
+                button {
+                    background-color: #eebbc3;
+                    padding: 18px 44px;
+                    border-radius: 12px;
+                    color: #232946;
+                    font-size: 20px;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: bold;
+                    transition: all 300ms;
+
+                    &:hover {
+                        background-color: #ba8a92;
+                        color: #373f61;
+                    }
+
+                }
+            }
+        }
+
+        .imgIntro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+
+            .imgContainer {
+                height: 40rem;
+
+                img {
+
+                    /* Estilo de neón */
+                    filter: drop-shadow(0 0 30px #71b0b0f4) drop-shadow(0 0 35px #2e4a78f4) drop-shadow(0 0 40px #271e5cea) drop-shadow(0 0 50px #3f57c4);
+                }
+            }
+        }
+    }
+}
+
 .HomePage {
     padding: 10px;
-    height: 40rem;
+    height: auto;
     width: 100%;
+
     // background-image: url('/fondo.jpg');
     display: flex;
     background-position: center 0;
@@ -23,6 +127,10 @@
     position: relative;
     user-select: none;
     justify-content: center;
+    padding-top: 60px;
+    flex-wrap: wrap;
+
+
 
     .container {
         max-width: 1500px;

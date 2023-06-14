@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/indent */
-/* eslint-disable no-negated-condition */
 /* eslint-disable @typescript-eslint/naming-convention */
 'use client';
 import React, {useState, useEffect} from 'react';
@@ -14,7 +13,7 @@ const VerURL: React.FC = () => {
     }
   }, []);
 
-  return <div>{URL}</div>;
+  return <div className={styles.VerURL}>{URL}</div>;
 };
 
 export default VerURL;

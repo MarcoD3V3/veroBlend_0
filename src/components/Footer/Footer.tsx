@@ -13,7 +13,7 @@ const Footer = () => {
 					<div className={styles.logo}>
 						{/* Aquí puedes insertar tu propio logo o marca */}
 						<Link href="/"><p>VeroBlend</p></Link>
-						<Link href="/"><Image src="/logo.png" width={150} height={150} alt='mas'/></Link>
+						<Link href="/"><Image src="/logo.png" width={150} height={150} alt='veroblend'/></Link>
 					</div>
 					<div className={styles.column}>
 						<h3 className={styles.columnTitle}>Explorar</h3>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './About.module.scss';
-import {NavBar} from '@/components/NavBar';
+import {NavBar, Footer} from '@/components';
 
 export default function AboutPage() {
 	return (
@@ -9,6 +9,7 @@ export default function AboutPage() {
 			<div className={styles.About}>
 				About
 			</div>
+			<Footer/>
 		</>
 	);
 }

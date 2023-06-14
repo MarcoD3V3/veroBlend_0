@@ -14,7 +14,6 @@ const NavBar = () => {
 	const [menuBurguerVisible, setMenuBurguerVisible] = useState(true);
 
   const toggleMenu = () => {
-		const menuBurger = document.querySelector('#menuBurger');
 		console.log(`el estado del menu amburguesa esta en: ${menuOpen}`);
     setMenuOpen(!menuOpen);
 		setMenuBurguerVisible(!menuBurguerVisible);
@@ -27,10 +26,10 @@ const NavBar = () => {
 					<div className={styles.logo}>
 						<Link href="/">
 							<Image
-							src='/logo.png'
-							width={50}
-							height={50}
-							alt="Picture of the author"
+								src='/logo.png'
+								width={60}
+								height={60}
+								alt="veroblend"
 							/>
 						</Link>
 					</div>
