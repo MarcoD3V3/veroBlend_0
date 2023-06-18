@@ -1,30 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-@keyframes mymove {
-    0% {
-        transform: translateY(0) rotate(0);
-    }
+$bgcLightTheme: #f9f4ef;
+$bgcLightThemeShadownBottom: #eaddcf;
+$fontLightTheme: #020826;
+$btnLightTheme: #8c7851;
+$btnHLightTheme: #a69066;
 
-    50% {
-        transform: translateY(-10px) rotate(5deg);
-    }
 
-    100% {
-        transform: translateY(0) rotate(0);
-    }
-}
+///////////////////////////////////////
+$bgcDarkTheme: #232946;
+$bgcDarkThemeShadownBottom: #232946;
+$btnDarkTheme: #eebbc3;
+$btnHDarkTheme: #c7a6abdb;
+$fontDarkTheme: #fffffe;
 
-$color-secundario: #0008;
+
+
+//////neon///////
 $color-neon: #fff;
-$color-principal: #232946;
-$neon-colors: #ff0066, #00ff99, #ffcc00, #6600ff; // Colores de neón disponibles
+$neoncolorLightTheme1: #FF6EC7; // Colores de neón disponibles
+$neoncolorLightTheme2: #FFA500; // Colores de neón disponibles
+$neoncolorLightTheme3: #FFFF00; // Colores de neón disponibles
+$neoncolorLightTheme4: #39FF14; // Colores de neón disponibles
+////////////////////////////
+$neoncolorDarkTheme1: #71b0b0f4; // Colores de neón disponibles
+$neoncolorDarkTheme2: #2e4a78f4; // Colores de neón disponibles
+$neoncolorDarkTheme3: #271e5cea; // Colores de neón disponibles
+$neoncolorDarkTheme4: #3f57c4; // Colores de neón disponibles // Colores de neón disponibles
+////////////////
+
 $paddingLeft: 60px;
 
 .Intro {
     width: 100%;
     height: 50rem;
-    background: rgb(35, 41, 70);
-    background: linear-gradient(to bottom, $color-principal, darken($color-principal, 10%));
+    background: linear-gradient(to bottom, $bgcLightTheme, darken($bgcLightThemeShadownBottom, 30%));
     // display: flex;
     padding-top: 65px;
 
@@ -49,8 +59,8 @@ $paddingLeft: 60px;
                 padding-left: $paddingLeft;
                 position: relative;
                 // font-weight: bold;
-                font-family: 'Anton',
-                    sans-serif;
+                font-family: 'Anton', sans-serif;
+                color: $fontLightTheme;
 
                 .learning {
                     position: absolute;
@@ -60,6 +70,7 @@ $paddingLeft: 60px;
                     width: 100%;
                     padding-left: $paddingLeft;
                     font-size: 25px;
+                    color: $fontLightTheme;
                 }
             }
 
@@ -68,6 +79,8 @@ $paddingLeft: 60px;
                 font-size: 20px;
                 width: 100%;
                 font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+                color: $fontLightTheme;
             }
 
             .buttonsContainer {
@@ -77,21 +90,28 @@ $paddingLeft: 60px;
                 display: flex;
                 gap: 20px;
 
-                button {
-                    background-color: #eebbc3;
-                    padding: 18px 44px;
-                    border-radius: 12px;
-                    color: #232946;
-                    font-size: 20px;
-                    font-family: 'Courier New', Courier, monospace;
-                    font-weight: bold;
-                    transition: all 300ms;
+                a {
+                    outline: none;
 
-                    &:hover {
-                        background-color: #ba8a92;
-                        color: #373f61;
+                    button {
+                        background-color: $btnLightTheme;
+                        padding: 18px 44px;
+                        border-radius: 12px;
+                        color: $fontLightTheme;
+                        font-size: 20px;
+                        font-family: 'Courier New', Courier, monospace;
+                        font-weight: bold;
+                        transition: all 300ms;
+
+                        &:hover {
+                            background-color: $btnHLightTheme;
+                            color: $fontLightTheme;
+                        }
                     }
 
+                    .coursesButton {
+                        font-weight: bold !important;
+                    }
                 }
             }
         }
@@ -105,11 +125,6 @@ $paddingLeft: 60px;
             .imgContainer {
                 height: 40rem;
 
-                img {
-
-                    /* Estilo de neón */
-                    filter: drop-shadow(0 0 30px #71b0b0f4) drop-shadow(0 0 35px #2e4a78f4) drop-shadow(0 0 40px #271e5cea) drop-shadow(0 0 50px #3f57c4);
-                }
             }
         }
     }
@@ -162,6 +177,164 @@ $paddingLeft: 60px;
             .articleInfo {
                 width: calc(100% - 35%);
 
+            }
+        }
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .Intro {
+        width: 100%;
+        height: 50rem;
+        background: linear-gradient(to bottom, $bgcDarkTheme, darken($bgcDarkThemeShadownBottom, 10%));
+        // display: flex;
+        padding-top: 65px;
+
+        .containerIntro {
+            display: flex;
+            // align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 100%;
+
+
+            .headingIntro {
+                padding-top: 45px;
+                // display: flex;
+                // align-items: start;
+                // justify-content: center;
+                width: 50%;
+
+                .textHeading {
+                    width: 100%;
+                    font-size: 140px;
+                    padding-left: $paddingLeft;
+                    position: relative;
+                    // font-weight: bold;
+                    font-family: 'Anton', sans-serif;
+                    color: $fontDarkTheme;
+
+                    .learning {
+                        position: absolute;
+                        letter-spacing: 1px;
+                        top: -4px;
+                        left: 0px;
+                        width: 100%;
+                        padding-left: $paddingLeft;
+                        font-size: 25px;
+                        color: $fontDarkTheme;
+                    }
+                }
+
+                .textLorem {
+                    padding-left: $paddingLeft;
+                    font-size: 20px;
+                    width: 100%;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: bold;
+                    color: $fontDarkTheme;
+                }
+
+                .buttonsContainer {
+                    width: 100%;
+                    padding-left: $paddingLeft;
+                    padding-top: 40px;
+                    display: flex;
+                    gap: 20px;
+
+                    a {
+                        outline: none;
+
+                        button {
+                            background-color: $btnDarkTheme;
+                            padding: 18px 44px;
+                            border-radius: 12px;
+                            color: $fontDarkTheme;
+                            font-size: 20px;
+                            font-family: 'Courier New', Courier, monospace;
+                            font-weight: bold;
+                            transition: all 300ms;
+
+                            &:hover {
+                                background-color: $btnHDarkTheme;
+                                color: $fontDarkTheme;
+                            }
+                        }
+
+                        .coursesButton {
+                            font-weight: bold !important;
+                        }
+                    }
+                }
+            }
+
+            .imgIntro {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+
+                .imgContainer {
+                    height: 40rem;
+
+                    img {
+                        filter:
+                            drop-shadow(0 0 30px $neoncolorDarkTheme1) drop-shadow(0 0 35px $neoncolorDarkTheme2) drop-shadow(0 0 40px $neoncolorDarkTheme3) drop-shadow(0 0 50px $neoncolorDarkTheme4);
+                    }
+                }
+            }
+        }
+    }
+
+    .HomePage {
+        padding: 10px;
+        height: auto;
+        width: 100%;
+
+        // background-image: url('/fondo.jpg');
+        display: flex;
+        background-position: center 0;
+        background-size: cover;
+        position: relative;
+        user-select: none;
+        justify-content: center;
+        padding-top: 60px;
+        flex-wrap: wrap;
+
+
+
+        .container {
+            max-width: 1500px;
+            width: 100%;
+
+            // background-color: #fff;
+            .section {
+                display: flex;
+                gap: 10px;
+                padding: 10px;
+                margin-top: 60px;
+                width: 100%;
+
+                article {
+                    height: 30rem;
+
+                }
+
+                .articleImage {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 35%;
+                    animation-timing-function: linear;
+                    transition: all 300ms;
+                    animation: mymove 2s ease-in-out infinite;
+                }
+
+                .articleInfo {
+                    width: calc(100% - 35%);
+
+                }
             }
         }
     }
