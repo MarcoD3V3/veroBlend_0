@@ -36,6 +36,7 @@
         "@typescript/rules/quotes": "off",
         "@typescript-eslint/restrict-template-expressions": "off",
         "@typescript-eslint/no-unsafe-assignment": "off",
-        "linebreak-style": "off"
+        "linebreak-style": "off",
+        "indent": "off"
     }
 }
