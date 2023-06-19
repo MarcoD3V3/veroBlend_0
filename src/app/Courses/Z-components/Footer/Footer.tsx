@@ -4,7 +4,6 @@ import {FaTwitter, FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn, FaSpotify} 
 
 import styles from './Footer.module.scss';
 import Image from 'next/image';
-
 export type FooterProps = {
 	columnONE_Title: string;
 	columnONE_Rowone: string;
