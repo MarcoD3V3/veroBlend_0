@@ -35,7 +35,7 @@ const cursos = [
 export default function Courses() {
 	return (
 		<div className={styles.Courses}>
-			<div>
+			<div className={styles.containercurso}>
 				<h1 className="text-2xl font-semibold mb-4">Cursos Disponibles</h1>
 				<div className="grid grid-cols-4 gap-10">
 					{cursos.map(curso => (
