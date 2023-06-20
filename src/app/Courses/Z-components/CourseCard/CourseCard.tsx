@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/indent */
+'use client';
 import Image from 'next/image';
 import React, {useState} from 'react';
 import styles from './CourseCard.module.scss';
