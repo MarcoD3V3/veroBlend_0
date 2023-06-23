@@ -12,7 +12,10 @@ export default function HomePage() {
 			<div className={styles.Intro}>
 				<div className={styles.containerIntro}>
 					<div className={styles.headingIntro}>
-						<div className={styles.textHeading}><h5 className={styles.learning}>Learning</h5>{headingTitle}</div>
+						<div className={styles.textHeading}>
+							<h5 className={styles.learning}>Learning</h5>
+							{headingTitle}
+						</div>
 						<div className={styles.textLorem}>
 							<p>Embark on a coding journey with our interactive platform, designed to empower learners with comprehensive tutorials and resources for mastering programming skills.</p>
 						</div>
@@ -21,7 +24,9 @@ export default function HomePage() {
 							<Link href='/Courses/Learn'><button className={styles.learnButton}>Learn</button></Link>
 						</div>
 					</div>
-					<div className={styles.imgIntro}><div className={styles.imgContainer}><Image src="/logo.png" width={460} height={460} alt='asd'/></div></div>
+					<div className={styles.imgIntro}><div className={styles.imgContainer}>
+						<Image src="/logo.png" width={460} height={460} alt='asd'/>
+					</div></div>
 				</div>
 			</div>
 			<div className={styles.HomePage}>
