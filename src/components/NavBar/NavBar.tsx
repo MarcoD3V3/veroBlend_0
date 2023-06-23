@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
 /* eslint-disable @typescript-eslint/indent */
 'use client';
-import {useState} from 'react';
+import React, {useState} from 'react';
+// Import {useRouter} from 'next/navigation';
 import {AiFillHome, AiTwotoneBell} from 'react-icons/ai';
 import {IoPeopleSharp, IoHandLeft} from 'react-icons/io5';
 import {VscMenu, VscChromeClose} from 'react-icons/vsc';
@@ -9,7 +10,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './NavBar.module.scss';
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
+  // Const router = useRouter();
+	// Const isAboutPage = router.padding === '/About';
+
   const [menuOpen, setMenuOpen] = useState(false);
 	const [menuBurguerVisible, setMenuBurguerVisible] = useState(true);
 
