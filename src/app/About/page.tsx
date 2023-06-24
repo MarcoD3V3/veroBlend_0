@@ -1,8 +1,11 @@
+'use client';
 import React from 'react';
 import styles from './About.module.scss';
 import {NavBar, Footer} from '@/components';
 import Link from 'next/link';
 import Image from 'next/image';
+import {UserCard} from './Z-componentrs/User';
+import {CreateUsers} from './Z-componentrs/CreateUsers';
 
 export default function AboutPage() {
 	return (
@@ -57,6 +60,12 @@ export default function AboutPage() {
 							<Link href="/courses" passHref>Ver nuestros cursos</Link>
 						</button>
 					</div>
+				</div>
+			</div>
+			<div className='flex colm-2'>
+				<div>
+					<UserCard name='marco' image='/logo.png'/>
+					<CreateUsers userName='smarco' imageUrl='/logo.png' id={0}/>
 				</div>
 			</div>
 			<Footer/>
