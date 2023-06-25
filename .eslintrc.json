@@ -5,20 +5,8 @@
         "node": true
     },
     "extends": [
-        "next",
-        "xo",
+        "standard-with-typescript",
         "plugin:react/recommended"
-    ],
-    "overrides": [
-        {
-            "extends": [
-                "xo-typescript"
-            ],
-            "files": [
-                "*.ts",
-                "*.tsx"
-            ]
-        }
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -28,15 +16,5 @@
         "react"
     ],
     "rules": {
-        "jsx-quotes": "off",
-        "arrow-body-style": "off",
-        "@typescript-eslint/indent": "off",
-        "react/react-in-jsx-scope": "off",
-        "new-cap": "off",
-        "@typescript/rules/quotes": "off",
-        "@typescript-eslint/restrict-template-expressions": "off",
-        "@typescript-eslint/no-unsafe-assignment": "off",
-        "linebreak-style": "off",
-        "indent": "off"
     }
 }

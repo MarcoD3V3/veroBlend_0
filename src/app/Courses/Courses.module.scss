@@ -1,5 +1,12 @@
 .Courses {
   .containercurso{
     padding: 10px;
+    .CourseCardContainer{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+
+    }
   }
 }

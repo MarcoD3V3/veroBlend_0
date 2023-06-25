@@ -1,16 +1,16 @@
 'use client';
 import React from 'react';
 import styles from './About.module.scss';
-import {NavBar, Footer} from '@/components';
+import { NavBar, Footer } from '@/components';
 import Link from 'next/link';
 import Image from 'next/image';
-import {UserCard} from './Z-componentrs/User';
-import {CreateUsers} from './Z-componentrs/CreateUsers';
+import { UserCard } from './Z-componentrs/User';
+import { CreateUsers } from './Z-componentrs/CreateUsers';
 
 export default function AboutPage() {
 	return (
 		<>
-			<NavBar/>
+			<NavBar />
 			<div className={styles.About}>
 				<div className="container mx-auto px-4 py-4">
 					<h1 className="text-4xl font-bold mb-4">Acerca de nosotros</h1>
@@ -64,11 +64,10 @@ export default function AboutPage() {
 			</div>
 			<div className='flex colm-2'>
 				<div>
-					<UserCard name='marco' image='/logo.png'/>
-					<CreateUsers userName='smarco' imageUrl='/logo.png' id={0}/>
+					<CreateUsers />
 				</div>
 			</div>
-			<Footer/>
+			<Footer />
 		</>
 	);
 }

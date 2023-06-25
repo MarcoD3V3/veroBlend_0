@@ -3,9 +3,11 @@
 'use client';
 import Link from 'next/link';
 import styles from './not-found.module.scss';
+import Image from 'next/image';
 
 export default function NotFound() {
   return (
+
     <div className={styles.container}>
       <h1 className={styles.title}>404 - No encontrado</h1>
       <p className={styles.description}>
@@ -15,6 +17,10 @@ export default function NotFound() {
       <Link href="/">
         <p className={styles.link}>Volver a la página de inicio</p>
       </Link>
-		</div>
-	);
+      <div className={styles.containerImg}>
+        <Image src='/logoTriste.png' width={400} height={400} alt='VeroBlend-NotFound' />
+      </div>
+    </div>
+  );
 }
+
