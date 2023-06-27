@@ -1,8 +1,67 @@
-.createUsers {
-  form {
-    .ErrorText {
-      color: red;
-      font-weight: bold;
+.CreateUsers {
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: auto;
+  .containerForm {
+    display: flex;
+    margin: 20px;
+    border-radius: 18px;
+    background-color: #9998;
+    padding: 15px;
+    min-height: 20rem;
+    width: 300px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    .Form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .LfirstName{
+        color: lawngreen;
+        font-size: larger;
+        font-weight: bold;
+      }
+      .firstNameInput{
+        background-color: transparent !important;
+        border-radius: 8px;
+        border: 2px solid #8888
+      }
+      .LlastName{
+        color: lightcoral;
+        font-size: larger;
+        font-weight: bold;
+      }
+      .lastNameInput{
+        background-color: transparent !important;
+        border-radius: 8px;
+        border: 2px solid #8888
+      }
+      .LAge{
+        font-size: larger;
+        font-weight: bold;
+        color: lightseagreen;
+      }
+      .ageInput{
+        background-color: transparent !important;
+        border-radius: 8px;
+        border: 2px solid #8888
+      }
+      input{
+        width: 90% !important;
+        outline: none;
+        padding: 3px 6px;
+      }
+      input:focus{
+        background-color: transparent !important;
+      }
+      .errorAge{
+        color: red;
+        font-weight: bold;
+      }
     }
   }
 }

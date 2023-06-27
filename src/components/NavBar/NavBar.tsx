@@ -9,6 +9,7 @@ import {VscMenu, VscChromeClose} from 'react-icons/vsc';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './NavBar.module.scss';
+import { FlyoutMenus } from './components/FlyoutMenus';
 
 const NavBar: React.FC = () => {
   // Const router = useRouter();
@@ -37,6 +38,7 @@ const NavBar: React.FC = () => {
 							/>
 						</Link>
 					</div>
+					<FlyoutMenus/>
 					<div className={`${styles.menu} ${menuOpen ? styles.open : ''}`}>
 						<ul className={styles.navLinks}>
 							<li>

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { UserCard } from './Z-componentrs/User';
 import { CreateUsers } from './Z-componentrs/CreateUsers';
+import { ComboboxAutocomplete } from '@/components/ComboboxAutocomplete';
 
 export default function AboutPage() {
 	return (
@@ -62,11 +63,12 @@ export default function AboutPage() {
 					</div>
 				</div>
 			</div>
-			<div className='flex colm-2'>
+			<div>
 				<div>
 					<CreateUsers />
 				</div>
 			</div>
+
 			<Footer />
 		</>
 	);
