@@ -1,6 +1,5 @@
 import React, { useState, useRef, Fragment, useEffect} from 'react';
 import styles from './CreateUsers.module.scss';
-import { UserCard } from '../User';
 import Image from 'next/image';
 import ReactDOM from "react-dom";
 import { useForm } from "react-hook-form";
