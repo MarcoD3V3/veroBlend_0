@@ -1,5 +1,9 @@
 "use client";
+<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
+=======
+import React, { useState } from "react";
+>>>>>>> fd753a8 (escho muy bien)
 import { Slide } from "@mui/material";
 import { AiFillHome, AiTwotoneBell } from "react-icons/ai";
 import { IoPeopleSharp, IoHandLeft } from "react-icons/io5";
@@ -9,6 +13,7 @@ import Image from "next/image";
 import styles from "./NavBar.module.scss";
 import { Transition } from "@headlessui/react";
 
+<<<<<<< HEAD
 interface NavLinksProps {
   inHome: boolean;
   inAbout: boolean;
@@ -125,6 +130,51 @@ const NavBar: React.FC = () => {
     }
   }, []);
 
+=======
+const NavLinks = () => {
+  return (
+    <ul className={styles.navLinks}>
+      <li>
+        <Link href="/">
+          <p>
+            <AiFillHome />
+          </p>
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link href="/About">
+          <p>
+            <AiTwotoneBell />
+          </p>
+          About
+        </Link>
+      </li>
+      <li>
+        <Link href="/Services">
+          <p>
+            <IoHandLeft />
+          </p>
+          Services
+        </Link>
+      </li>
+      <li>
+        <Link href="/Contact">
+          <p>
+            <IoPeopleSharp />
+          </p>
+          Contact
+        </Link>
+      </li>
+    </ul>
+  );
+};
+
+const NavBar: React.FC = () => {
+  const [isShowing, setIsShowing] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+>>>>>>> fd753a8 (escho muy bien)
   const toggle = () => {
     setIsShowing(!isShowing);
     setMenuOpen(!menuOpen);
@@ -140,12 +190,16 @@ const NavBar: React.FC = () => {
             </Link>
           </div>
           <div className={`${styles.menu} ${menuOpen ? styles.open : ""}`}>
+<<<<<<< HEAD
             <NavLinks
               inHome={inHome}
               inAbout={inAbout}
               inContact={inContact}
               inServices={inServices}
             />
+=======
+            <NavLinks />
+>>>>>>> fd753a8 (escho muy bien)
           </div>
           <div className={styles.menuToggle} onClick={toggle}>
             {menuOpen ? (
@@ -175,12 +229,16 @@ const NavBar: React.FC = () => {
                 className={`fixed inset-y-0 top-0 right-0 w-64 bg-gray-200 ${styles.Slide}`}
               >
                 <div id="menuBurger" className={styles.menuBurger}>
+<<<<<<< HEAD
                   <NavLinks
                     inHome={inHome}
                     inAbout={inAbout}
                     inContact={inContact}
                     inServices={inServices}
                   />
+=======
+                  <NavLinks />
+>>>>>>> fd753a8 (escho muy bien)
                 </div>
               </div>
             </Slide>
