@@ -1,38 +1,47 @@
-
-import styles from './homePage.module.scss';
-import {NavBar, Footer, VerURL, Ejemplo} from '@/components/';
-import Image from 'next/image';
-import Link from 'next/link';
+import styles from "./homePage.module.scss";
+import { NavBar, Footer, VerURL, Ejemplo } from "@/components/";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function HomePage() {
-	const headingTitle = 'VeroBlend';
-	return (
-		<>
-			<NavBar />
-			<div className={styles.Intro}>
-				<div className={styles.containerIntro}>
-					<div className={styles.headingIntro}>
-						<div className={styles.textHeading}>
-							<h5 className={styles.learning}>Learning</h5>
-							{headingTitle}
-						</div>
-						<div className={styles.textLorem}>
-							<p>Embark on a coding journey with our interactive platform, designed to empower learners with comprehensive tutorials and resources for mastering programming skills.</p>
-						</div>
-						<div className={styles.buttonsContainer}>
-							<Link href='/Courses'><button className={styles.coursesButton}>Courses</button></Link>
-							<Link href='/Courses/Learn'><button className={styles.learnButton}>Learn</button></Link>
-						</div>
-					</div>
-					<div className={styles.imgIntro}><div className={styles.imgContainer}>
-						<Image src="/logo.png" width={460} height={460} alt='asd'/>
-					</div></div>
-				</div>
-			</div>
-			<div className={styles.HomePage}>
-				<Ejemplo/>
-				<Ejemplo/>
-				{/* <div className={styles.container}>
+  const headingTitle = "VeroBlend";
+  return (
+    <>
+      <NavBar />
+      <div className={styles.Intro}>
+        <div className={styles.containerIntro}>
+          <div className={styles.headingIntro}>
+            <div className={styles.textHeading}>
+              <h5 className={styles.learning}>Learning</h5>
+              {headingTitle}
+            </div>
+            <div className={styles.textLorem}>
+              <p>
+                Embark on a coding journey with our interactive platform,
+                designed to empower learners with comprehensive tutorials and
+                resources for mastering programming skills.
+              </p>
+            </div>
+            <div className={styles.buttonsContainer}>
+              <Link href="/Courses">
+                <button className={styles.coursesButton}>Courses</button>
+              </Link>
+              <Link href="/Courses/Learn">
+                <button className={styles.learnButton}>Learn</button>
+              </Link>
+            </div>
+          </div>
+          <div className={styles.imgIntro}>
+            <div className={styles.imgContainer}>
+              <Image src="/logo.png" width={460} height={460} alt="asd" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.HomePage}>
+        <Ejemplo />
+        <Ejemplo />
+        {/* <div className={styles.container}>
 					<div className={styles.homeIntro}>
 						<section className={styles.section}>
 							<article id='articleImage' className={styles.articleImage}>
@@ -48,8 +57,8 @@ export default function HomePage() {
 						</section>
 					</div>
 				</div> */}
-			</div>
-			<Footer/>
-		</>
-	);
+      </div>
+      <Footer />
+    </>
+  );
 }

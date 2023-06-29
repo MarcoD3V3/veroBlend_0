@@ -11,7 +11,7 @@ import { ComboboxAutocomplete } from "@/components/ComboboxAutocomplete";
 export default function AboutPage() {
   return (
     <>
-      <NavBar darkColor="#111" />
+      <NavBar />
       <div className={styles.About}>
         <AboutHistoria />
         <div>

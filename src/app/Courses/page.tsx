@@ -15,7 +15,7 @@ const cursos = [
     id: 2,
     nombre: "Curso de Pión",
     descripcion: "Aprende a programar desde cero",
-    tags: ["Programación", "Desarrollo web", "JavaScript",],
+    tags: ["Programación", "Desarrollo web", "JavaScript"],
     imagen: "/logo.png",
   },
   {
@@ -56,7 +56,7 @@ export default function Courses() {
         <div className={styles.containercurso}>
           <h1 className="text-2xl font-semibold">Cursos Disponibles</h1>
           <div className={styles.CourseCardContainer}>
-            {cursos.map(curso => (
+            {cursos.map((curso) => (
               <CourseCard key={curso.id} curso={curso} />
             ))}
           </div>

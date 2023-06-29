@@ -1,9 +1,6 @@
 import React from 'react';
 import styles from './AboutHistoria.module.scss';
 
-export type AboutHistoriaProps = {
-}
-
 const AboutHistoria: React.FC = () => {
 	return (
 		<div className={styles.AboutHistoria}>
