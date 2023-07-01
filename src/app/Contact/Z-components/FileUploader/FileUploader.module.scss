@@ -1,17 +1,17 @@
 .FileUploader {
   display: flex;
-  min-height: 12rem ;
-  width: 40rem ;
+  min-height: 12rem;
+  width: 40rem;
   background-color: #999;
-  .containerFileUploader{
+  .containerFileUploader {
     margin: 30px;
     background-color: #666;
     padding: 60px;
-    border-radius: 15px; 
+    border-radius: 15px;
     transition: all 200ms;
     border: 4px dashed #111;
-    &:hover{
-    border: 4px dashed #333;
+    &:hover {
+      border: 4px dashed #333;
     }
   }
 }

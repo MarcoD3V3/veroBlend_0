@@ -3,9 +3,7 @@ import styles from "./AboutIndice.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-export type AboutIndiceProps = {};
-
-const AboutIndice: React.FC<AboutIndiceProps> = () => {
+const AboutIndice: React.FC = () => {
   return (
     <div className={styles.AboutIndice}>
       <div className="container mx-auto px-4 py-4">

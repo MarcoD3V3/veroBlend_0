@@ -69,7 +69,12 @@ $color-light: #fff;
         &:last-child {
           margin-right: 0;
         }
-
+        .loinkClosed{
+          color: black !important;
+        }
+        .linkOpen {
+          color: red !important;
+        }
         a {
           justify-content: center;
           text-align: center;

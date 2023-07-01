@@ -1,5 +1,5 @@
 import styles from "./homePage.module.scss";
-import { NavBar, Footer, VerURL, Ejemplo } from "@/components/";
+import { NavBar, Footer, Ejemplo } from "@/components/";
 import Image from "next/image";
 import Link from "next/link";
 
