@@ -1,6 +1,5 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styles from "./FlyoutMenus.module.scss";
-import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import {
   ChevronDownIcon,
@@ -52,8 +51,6 @@ const callsToAction = [
   { name: "Watch demo", href: "#", icon: PlayCircleIcon },
   { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
-
-export type FlyoutMenusProps = {};
 
 const FlyoutMenus: React.FC = () => {
   return (

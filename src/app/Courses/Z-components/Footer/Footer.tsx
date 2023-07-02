@@ -29,7 +29,6 @@ const Footer: React.FC<FooterProps> = props => {
 	const columnOneRowFour = props.columnONE_RowFour;
 	const columnOneRowFive = props.columnONE_RowFive;
 
-	const columnTwoTitle = props.columnTWO_Title;
 	const columnTwoRowOne = props.columnTWO_Rowone;
 	const columnTwoRowTwo = props.columnTWO_RowTwo;
 	const columnTwoRowTree = props.columnTWO_RowTree;
