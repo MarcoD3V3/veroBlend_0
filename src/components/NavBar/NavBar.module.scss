@@ -69,7 +69,7 @@ $color-light: #fff;
         &:last-child {
           margin-right: 0;
         }
-        .loinkClosed{
+        .loinkClosed {
           color: black !important;
         }
         .linkOpen {
@@ -193,7 +193,7 @@ $color-light: #fff;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .menuBurger {
     display: block !important;
   }

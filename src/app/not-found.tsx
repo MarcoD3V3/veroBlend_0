@@ -2,6 +2,7 @@
 import Link from "next/link";
 import styles from "./not-found.module.scss";
 import Image from "next/image";
+import KeyboardDoubleArrowLeftTwoToneIcon from "@mui/icons-material/KeyboardDoubleArrowLeftTwoTone";
 
 export default function NotFound() {
   return (
@@ -12,7 +13,10 @@ export default function NotFound() {
       </p>
       <br />
       <Link href="/">
-        <p className={styles.link}>Volver a la página de inicio</p>
+        <p className={styles.link}>
+          <KeyboardDoubleArrowLeftTwoToneIcon />
+          <p className={styles.Volver}>Volver a la página de inicio</p>
+        </p>
       </Link>
       <div className={styles.containerImg}>
         <Image

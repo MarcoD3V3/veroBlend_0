@@ -3,9 +3,11 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./CourseCard.module.scss";
+import { useRouter } from "next/navigation";
 
 type Course = {
   id: number;
+  PCV: string;
   nombre: string;
   descripcion: string;
   tags: string[];
@@ -17,6 +19,7 @@ type CourseCardProps = {
 };
 
 const CourseCard: React.FC<CourseCardProps> = ({ curso }) => {
+  const router = useRouter();
   return (
     <div className={`${styles.CourseCard}`}>
       <div className={`${styles.containerImgCourse}`}>
@@ -41,7 +44,14 @@ const CourseCard: React.FC<CourseCardProps> = ({ curso }) => {
           ))}
         </div>
         <div className={styles.containerButtons}>
-          <button className={`${styles.button}`}>Ver más</button>
+          <button
+            className={`${styles.button}`}
+            onClick={() => {
+              router.push(`/Courses/${curso.PCV}`);
+            }}
+          >
+            Ver más
+          </button>
         </div>
       </div>
     </div>

@@ -720,3 +720,128 @@ $paddingGlobal: 30px;
     }
   }
 }
+
+@media (max-width: 320px) {
+  .Intro {
+    height: 100vh;
+    width: 100%;
+    min-height: calc(34rem - 60px);
+    // display: flex;
+    padding-top: 65px;
+
+    .containerIntro {
+      display: flex;
+      // align-items: center;
+      flex-wrap: wrap;
+      justify-content: start;
+      height: calc(100% - 65px);
+
+      .headingIntro {
+        padding: 0 20px 0 20px;
+        padding-top: 30px;
+        // display: flex;
+        // align-items: start;
+        // justify-content: center;
+        width: 100%;
+
+        .textHeading {
+          width: 100%;
+          font-size: 60px;
+          position: relative;
+          // font-weight: bold;
+          font-family: "Anton", sans-serif;
+
+          .learning {
+            position: absolute;
+            letter-spacing: 1px;
+            top: -4px;
+            left: 0px;
+            width: 100%;
+            font-size: 13px;
+          }
+        }
+
+        .textLorem {
+          font-size: 12px;
+          width: 100%;
+          font-family: "Courier New", Courier, monospace;
+          font-weight: bold;
+        }
+
+        .buttonsContainer {
+          width: 100%;
+          padding-top: 30px;
+          display: flex;
+          gap: 20px;
+
+          a {
+            outline: none;
+
+            button {
+              padding: 10px 25px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+
+      .imgIntro {
+        display: none !important;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+
+        .imgContainer {
+          width: 70%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .HomePage {
+    height: auto;
+    width: 100%;
+
+    // background-image: url('/fondo.jpg');
+    display: flex;
+    background-position: center 0;
+    background-size: cover;
+    position: relative;
+    user-select: none;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .container {
+      max-width: 1500px;
+      width: 100%;
+
+      // background-color: #fff;
+      .section {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        margin-top: 60px;
+        width: 100%;
+
+        article {
+          height: 30rem;
+        }
+
+        .articleImage {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 35%;
+          animation-timing-function: linear;
+          transition: all 300ms;
+          animation: mymove 2s ease-in-out infinite;
+        }
+
+        .articleInfo {
+          width: calc(100% - 35%);
+        }
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   // eslint-disable-next-line @typescript-eslint/indent
-  title: "VeroBlent",
+  title: "VeroBlend",
   description:
     "Unlock the power of coding with our comprehensive programming tutorials and courses. Our platform offers expert guidance, hands-on projects, and real-world examples to help you master programming languages and frameworks. Accelerate your learning journey and become a proficient programmer with our SEO-optimized resources.",
 };

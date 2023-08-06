@@ -1,12 +1,35 @@
 .Courses {
-  .containercurso{
-    padding: 10px;
-    .CourseCardContainer{
+  padding-top: 60px;
+  .containercurso {
+    text-align: center;
+    padding: 10px 10px 40px 10px;
+    .headingText {
+      padding-bottom: 20px;
+    }
+    .CourseCardContainer {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 15px;
+    }
+  }
+}
 
+@media screen and (max-width: 320px) {
+  .Courses {
+    padding-top: 60px;
+    .containercurso {
+      text-align: center;
+      padding: 15px;
+      .headingText {
+        padding-bottom: 10px;
+      }
+      .CourseCardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
     }
   }
 }

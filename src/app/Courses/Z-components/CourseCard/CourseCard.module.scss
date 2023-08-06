@@ -8,7 +8,7 @@
   background-color: #121629;
   padding: 10px;
   position: relative;
-  transition: ease-in-out 500ms;
+  transition: ease-in-out 400ms;
 
   &:hover .containerImgCourse img {
     scale: 1.2;
@@ -29,7 +29,7 @@
     overflow: hidden;
 
     img {
-      transition: ease-in-out 800ms;
+      transition: ease-in-out 600ms;
     }
   }
 
@@ -45,7 +45,7 @@
     .descripcion {
       color: #888;
       padding: -top 12px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
 
     .Tags {
@@ -63,14 +63,15 @@
         color: #b8c1ec;
         background-color: #232957;
       }
-
     }
 
     .containerButtons {
+      width: 100%;
       position: absolute;
-      transform: translate(50%, 50%);
-      bottom: 30px;
-      right: 56px;
+      bottom: 0px;
+      padding: 5px 0px;
+      right: 0px;
+      // background-color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -79,14 +80,22 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: "Courier New", Courier, monospace;
         font-weight: bold;
         font-size: 17px;
         border-radius: 10px;
         background-color: #232946;
         padding: 8px 12px;
-        width: 100%;
+        width: 97%;
         height: 100%;
+        transition: ease-in-out 300ms;
+        &:hover {
+          background-color: #1e2548;
+        }
+        &:active {
+          scale: 0.96;
+          background-color: #232957;
+        }
       }
     }
   }

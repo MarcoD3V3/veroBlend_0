@@ -1,11 +1,13 @@
+"use client";
 import React from "react";
 import styles from "./Courses.module.scss";
 import { CourseCard } from "./Z-components/CourseCard";
-import { NavBar } from "@/components";
+import { Footer, NavBar } from "@/components";
 
 const cursos = [
   {
     id: 1,
+    PCV: "Conceptos",
     nombre: "Conceptos ",
     descripcion: "Aprende a programar desde cero",
     tags: ["Programación", "Desarrollo web", "JavaScript"],
@@ -13,35 +15,40 @@ const cursos = [
   },
   {
     id: 2,
-    nombre: "Curso de Pión",
+    PCV: "CursoDePion",
+    nombre: "Curso de Pion",
     descripcion: "Aprende a programar desde cero",
     tags: ["Programación", "Desarrollo web", "JavaScript"],
     imagen: "/logo.png",
   },
   {
     id: 3,
-    nombre: "Curso de Programación",
+    PCV: "CursoDeProgramacion",
+    nombre: "Curso de Programacion",
     descripcion: "Aprende a programar desde cero",
     tags: ["Programación", "Desarrollo web", "JavaScript"],
     imagen: "/logo.png",
   },
   {
     id: 4,
-    nombre: "Curso de Programación",
+    PCV: "CursoDeProgramacion",
+    nombre: "Curso de Programacion",
     descripcion: "Aprende a programar desde cero",
     tags: ["Programación", "Desarrollo web", "JavaScript"],
     imagen: "/logo.png",
   },
   {
     id: 5,
-    nombre: "Curso de Programación",
+    PCV: "CursoDeProgramacion",
+    nombre: "Curso de Programacion",
     descripcion: "Aprende a programar desde cero",
     tags: ["Programación", "Desarrollo web", "JavaScript"],
     imagen: "/logo.png",
   },
   {
     id: 6,
-    nombre: "Curso de Programación",
+    PCV: "CursoDeProgramacion",
+    nombre: "Curso de Programacion",
     descripcion: "Aprende a programar desde cero",
     tags: ["Programación", "Desarrollo web", "JavaScript"],
     imagen: "/logo.png",
@@ -54,7 +61,9 @@ export default function Courses() {
       <NavBar />
       <div className={styles.Courses}>
         <div className={styles.containercurso}>
-          <h1 className="text-2xl font-semibold">Cursos Disponibles</h1>
+          <div className={`${styles.headingText}`}>
+            <h1 className={`text-2xl font-semibold `}>Cursos Disponibles</h1>
+          </div>
           <div className={styles.CourseCardContainer}>
             {cursos.map((curso) => (
               <CourseCard key={curso.id} curso={curso} />
@@ -62,6 +71,7 @@ export default function Courses() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

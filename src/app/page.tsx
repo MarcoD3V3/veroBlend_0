@@ -1,5 +1,7 @@
+"use client";
 import styles from "./homePage.module.scss";
 import { NavBar, Footer, Ejemplo } from "@/components/";
+// import { Disclosures } from "@/components/Disclosures";
 import Image from "next/image";
 import Link from "next/link";
 
