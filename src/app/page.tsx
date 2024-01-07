@@ -1,9 +1,10 @@
 "use client";
 import styles from "./homePage.module.scss";
-import { NavBar, Footer, Ejemplo } from "@/components/";
+import { NavBar, Footer } from "@/components/";
 // import { Disclosures } from "@/components/Disclosures";
 import Image from "next/image";
 import Link from "next/link";
+import { Login_btn } from "@/components/Login-btn";
 
 export default function HomePage() {
   const headingTitle = "VeroBlend";
@@ -41,8 +42,6 @@ export default function HomePage() {
         </div>
       </div>
       <div className={styles.HomePage}>
-        <Ejemplo />
-        <Ejemplo />
         {/* <div className={styles.container}>
 					<div className={styles.homeIntro}>
 						<section className={styles.section}>

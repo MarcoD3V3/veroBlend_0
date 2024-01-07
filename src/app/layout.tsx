@@ -1,7 +1,8 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-
+import { Providers } from "./Providers";
 const inter = Inter({ subsets: ["latin"] });
+import { StrictMode } from "react";
 
 export const metadata = {
   // eslint-disable-next-line @typescript-eslint/indent
@@ -17,7 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <StrictMode>
+          <Providers>{children}</Providers>
+        </StrictMode>
+      </body>
     </html>
   );
 }

@@ -3,8 +3,8 @@
 $bgcLightTheme: #f9f4ef;
 $bgcLightThemeShadownBottom: #eaddcf;
 $fontLightTheme: #020826;
-$btnLightTheme: #8c7851;
-$btnHLightTheme: #a69066;
+$btnLightTheme: #9e7c59;
+$btnHLightTheme: #806142;
 
 ///////////////////////////////////////
 $bgcDarkTheme: #232946;
@@ -408,13 +408,13 @@ $paddingGlobal: 30px;
 
       .imgIntro {
         display: flex;
-        align-items: center;
-        justify-content: center;
         width: 40%;
 
         .imgContainer {
-          width: 70%;
-          height: auto;
+          width: 100%;
+          img {
+            width: 100%;
+          }
         }
       }
     }

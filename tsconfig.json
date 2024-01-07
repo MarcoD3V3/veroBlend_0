@@ -23,7 +23,16 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/NavBar/index.ts", "src/components/Footer/index.ts", "src/components/index.js"],
+  "include": [
+    "next.config.js",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/NavBar/index.ts",
+    "src/components/Footer/index.ts",
+    "src/components/index.js",
+    "src/pages/api/auth/[...nextauth].ts"
+  ],
   "exclude": ["node_modules"]
 }
-
