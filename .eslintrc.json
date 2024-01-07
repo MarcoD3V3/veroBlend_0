@@ -19,7 +19,10 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "quotes": ["error", "single", "double"],
+    "comma-dangle": "off",
+    "quotes": "off",
+    "semi": "off",
+    "@typescript-eslint/triple-slash-reference": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/space-before-function-paren": "off",
