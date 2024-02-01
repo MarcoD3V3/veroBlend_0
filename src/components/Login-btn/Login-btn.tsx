@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
+/* eslint-disable @typescript-eslint/promise-function-async */
 "use client";
 import React, { Fragment } from "react";
 import styles from "./Login_btn.module.scss";
@@ -9,14 +11,13 @@ import Image from "next/image";
 export type Login_btnProps = {
   // types...
 };
-const Login_btn: React.FC<Login_btnProps> = ({}) => {
+// eslint-disable-next-line @typescript-eslint/naming-convention
+const Login_btn: React.FC<Login_btnProps> = () => {
   const { data: session } = useSession();
-  const idiomaNavegador = navigator.language;
-  console.log("Idioma del navegador:", idiomaNavegador);
   console.log(session);
   return (
     <div>
-      {session?.user ? (
+      {session?.user != null ? (
         <div className=" text-right">
           <Menu as="div" className="relative inline-block text-left">
             <div>
