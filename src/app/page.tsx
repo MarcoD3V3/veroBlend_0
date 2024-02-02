@@ -4,7 +4,6 @@ import { NavBar, Footer } from "@/components/";
 // import { Disclosures } from "@/components/Disclosures";
 import Image from "next/image";
 import Link from "next/link";
-import { Login_btn } from "@/components/Login-btn";
 
 export default function HomePage() {
   const headingTitle = "VeroBlend";
@@ -36,7 +35,12 @@ export default function HomePage() {
           </div>
           <div className={styles.imgIntro}>
             <div className={styles.imgContainer}>
-              <Image src="/logo.png" width={460} height={460} alt="asd" />
+              <Image
+                src="/logo.png"
+                width={460}
+                height={460}
+                alt="VeroBlend logo"
+              />
             </div>
           </div>
         </div>

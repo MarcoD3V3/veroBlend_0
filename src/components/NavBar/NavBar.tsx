@@ -8,7 +8,6 @@ import Image from "next/image";
 import styles from "./NavBar.module.scss";
 // import { Transition } from "@headlessui/react";
 import { MenuBuger } from "./components/MenuBurguer";
-import { Login_btn } from "../Login-btn";
 
 const paths = [
   {
@@ -49,9 +48,7 @@ const NavLinks = () => {
           </Link>
         </li>
       ))}
-      <div>
-        <Login_btn />
-      </div>
+      <div></div>
     </ul>
   );
 };

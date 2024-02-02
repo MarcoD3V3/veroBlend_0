@@ -1,3 +1,8 @@
-export {default as NavBar} from './NavBar/NavBar';
-export {default as Footer} from './Footer/Footer';
-export {default as Ejemplo} from './Ejemplo/Ejemplo';
+export * from "./Customization";
+export * from "./Disclosures";
+export * from "./Ejemplo";
+export * from "./Footer";
+export * from "./GroupAvatars";
+export * from "./NavBar/components/FlyoutMenus";
+export * from "./NavBar/components/MenuBurguer";
+export * from "./NavBar";
