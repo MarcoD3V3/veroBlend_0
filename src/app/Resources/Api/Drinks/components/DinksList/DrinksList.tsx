@@ -8,7 +8,7 @@ const DrinksList = () => {
       <div className={styles.DrinksList}>Drinks List</div>
       <div>
         <h1>API Data</h1>
-         {apiData ? (
+{/*          {apiData ? (
           <ul>
             {apiData.map (
               <li key={item.idDrink}>
@@ -18,7 +18,7 @@ const DrinksList = () => {
           </ul>
         ) : (
           <p>Cargando datos...</p>
-        )}
+        )} */}
       </div>
     </>
   );
