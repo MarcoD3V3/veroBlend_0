@@ -1,0 +1,29 @@
+.language_change {
+  background: #333;
+  color: rgb(255, 255, 255);
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 60px;
+  min-height: 35px;
+  height: 60px;
+  width: 400px;
+  border-radius: 10px 0px 0px 10px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  align-content: center; 
+  position: fixed;
+  right: -350px;
+  bottom: 80px;
+  .button_CloseAndOpenContainer {
+    max-width: 50px;
+    width: 50px;
+    cursor: pointer;
+    .button{
+        font-size: 40px;
+
+    }
+  }
+}
