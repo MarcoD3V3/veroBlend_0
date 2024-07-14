@@ -36,12 +36,10 @@ export default function HomePage() {
           </div>
           <div className={styles.imgIntro}>
             <div className={styles.imgContainer}>
-              <Image
-                src="/logo.png"
-                width={460}
-                height={460}
-                alt="VeroBlend logo"
-              />
+            <picture>
+              <source srcSet="/logoVeroBlend_white_border.svg" media="(prefers-color-scheme: dark)" />
+              <Image src="/logoVeroBlend_black_border.svg" width={460} height={460} alt="veroblend" />
+            </picture>
             </div>
           </div>
         </div>

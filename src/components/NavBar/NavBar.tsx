@@ -60,7 +60,10 @@ const NavBar: React.FC = () => {
         <nav className={styles.navbar}>
           <div className={styles.logo}>
             <Link href="/">
-              <Image src="/logo.png" width={60} height={60} alt="veroblend" />
+            <picture>
+              <source srcSet="/Nav_logoVeroBlend_white_border.svg" media="(prefers-color-scheme: dark)" />
+              <Image src="/Nav_logoVeroBlend_black_border.svg" width={60} height={60} alt="veroblend" />
+            </picture>
             </Link>
           </div>
           <div className={`${styles.menu} `}>

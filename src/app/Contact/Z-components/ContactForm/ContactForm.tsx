@@ -2,18 +2,18 @@
 import React from "react";
 import styles from "./ContactForm.module.scss";
 import { TextField } from "@mui/material";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/shadcn-ui/ui/alert-dialog";
-import { Button } from "@/components/shadcn-ui/ui/button";
+// import {
+//   AlertDialog,
+//   AlertDialogAction,
+//   AlertDialogCancel,
+//   AlertDialogContent,
+//   AlertDialogDescription,
+//   AlertDialogFooter,
+//   AlertDialogHeader,
+//   AlertDialogTitle,
+//   AlertDialogTrigger,
+// } from "@/components/shadcn-ui/ui/alert-dialog";
+// import { Button } from "@/components/shadcn-ui/ui/button";
 
 const ContactForm: React.FC = () => {
   const handleSubmit = (event: React.FormEvent) => {
@@ -43,7 +43,7 @@ const ContactForm: React.FC = () => {
           rows={3}
           InputProps={{ className: styles.input }}
         />
-        <AlertDialog>
+        {/* <AlertDialog>
           <AlertDialogTrigger asChild>
             <Button variant="outline">Show Dialog</Button>
           </AlertDialogTrigger>
@@ -60,7 +60,7 @@ const ContactForm: React.FC = () => {
               <AlertDialogAction>Continue</AlertDialogAction>
             </AlertDialogFooter>
           </AlertDialogContent>
-        </AlertDialog>
+        </AlertDialog> */}
       </form>
     </div>
   );

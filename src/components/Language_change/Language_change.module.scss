@@ -1,4 +1,5 @@
 .language_change {
+  z-index: 100;
   background: #333;
   color: rgb(255, 255, 255);
   max-width: 500px;
@@ -17,13 +18,37 @@
   position: fixed;
   right: -350px;
   bottom: 80px;
+  transition: ease-in-out 600ms;
+  gap: 20px;
+  &:hover {
+    right: 0px;
+
+  }
   .button_CloseAndOpenContainer {
     max-width: 50px;
     width: 50px;
     cursor: pointer;
-    .button{
+    .button_arrow{
         font-size: 40px;
 
+    }
+  }
+  .options {
+    font-size: 40px;
+    display: flex;
+    min-width: 100%;
+    max-width: 100%;
+    justify-content: start;
+    gap: 30px;
+  }
+  .Optn {
+    cursor: pointer;
+    
+    svg{
+      transition: ease-in-out 0.2s;
+      &:hover {
+        scale: 0.1;
+      }
     }
   }
 }

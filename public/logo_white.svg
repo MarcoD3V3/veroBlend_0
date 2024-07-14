@@ -1,0 +1,32 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <path fill="#fff" stroke="#000" opacity="NaN" d="m1037,419c0,0 -158,55 -131,103c27,48 131,-103 131,-103z" id="svg_2"/>
+  <g id="svg_74">
+   <g stroke="null" id="svg_62">
+    <path stroke="#000" stroke-width="20" fill="#ffffff" opacity="NaN" d="m320.40476,91.97173" id="svg_3"/>
+    <path stroke="#000" stroke-width="20" id="svg_4" d="m363.68855,96.27666" opacity="NaN" fill="#ffffff"/>
+    <path stroke="#000" stroke-width="20" id="svg_6" d="m234.22909,166.82203" opacity="NaN" fill="#ffffff"/>
+    <path stroke="#000" stroke-width="20" id="svg_8" d="m360.17503,95.44345" opacity="NaN" fill="#ffffff"/>
+    <path stroke="#000" stroke-width="20" id="svg_9" d="m233.51589,21.75031" opacity="NaN" fill="#ffffff"/>
+    <path stroke="#000" stroke-width="20" id="svg_11" d="m235.73811,18.89578c0,0 -126.11108,65.65408 -126.38893,65.08325c0.27785,0.57084 -44.72214,-48.527 -44.72214,-48.527c0,0 10.55555,59.94503 10.55555,59.94503c0,0 -60.55554,47.95603 -31.66666,155.28618" opacity="NaN" fill="#ffffff"/>
+    <path stroke="#000" stroke-width="20" id="svg_12" d="m43.63348,249.86073" opacity="NaN" fill="#ffffff"/>
+    <path stroke="#000" stroke-width="20" id="svg_14" d="m560.85731,241.95679" opacity="NaN" fill="#ffffff"/>
+    <path stroke="#000" stroke-width="20" id="svg_21" d="m234.66677,19.30372l4.28565,131.14504" opacity="NaN" fill="#ffffff"/>
+    <path stroke="#000" id="svg_26" d="m28,252.72232" opacity="NaN" stroke-width="20" fill="#ffffff"/>
+    <path stroke="#000" d="m42.02517,257.16958c0,-0.31141 0,-0.62282 0,-0.93421c0,-0.31141 0,-0.62282 0,-0.93421c0,-0.31141 0.30303,-0.31141 0.30303,-0.62282l0,-0.31138l0.30303,0" id="svg_35" fill="#ffffff"/>
+    <polyline stroke="#000" stroke-linecap="round" id="svg_39" points="43.23728942871094,249.384521484375 43.23728942871094,249.07310485839844 " fill-opacity="0" stroke-width="20" fill="#ffffff"/>
+    <polyline stroke="#000" stroke-linecap="round" id="svg_43" points="239.29744720458984,150.04725646972656 239.29744720458984,149.73585510253906 " fill-opacity="0" stroke-width="20" fill="#ffffff"/>
+    <polyline stroke="#000" stroke-linecap="round" id="svg_45" points="539.2967300415039,270.87127685546875 539.5997695922852,270.87127685546875 " stroke-width="20" fill="#ffffff"/>
+    <polyline stroke="#000" stroke-linecap="round" id="svg_46" points="108.08562469482422,82.16159057617188 108.38865661621094,82.16159057617188 108.69168090820312,82.16159057617188 " stroke-width="20" fill="#ffffff"/>
+    <line stroke="#000" stroke-linecap="round" id="svg_47" y2="18.63556" x2="234.75199" y1="24.8636" x1="225.66111" stroke-width="20" fill="#ffffff"/>
+    <g stroke="null" id="svg_61">
+     <path stroke="#000" fill-opacity="0" stroke-width="20" id="svg_17" d="m43.58448,249.65289c0,0 97.14288,1.46804 97.14281,1.46798c0.00006,0.00007 98.09532,224.61053 98.09525,224.61046c0.00006,0.00007 -159.04759,0.48942 -159.04759,0.48942c0,0 -0.95238,99.82687 -0.95238,99.82687c0,0 381.42865,0.48935 381.42865,0.48935c0,0 127.14288,-17.61651 110.9524,-169.31421" opacity="NaN" fill="#ffffff"/>
+     <path stroke="#000" stroke-width="20" id="svg_19" d="m571.80969,408.82426c-36.66667,-153.16574 -32.85715,-139.46401 -32.85715,-139.46401c0,0 -55.7143,-173.22899 -299.52387,-119.40077" opacity="NaN" fill="#ffffff"/>
+    </g>
+   </g>
+   <polyline stroke="#000" stroke-linecap="round" id="svg_71" points="539.6272964477539,270.0949401855469 539.6272964477539,270.6658630371094 " stroke-width="20" fill="#ffffff"/>
+  </g>
+ </g>
+
+</svg>
