@@ -1,8 +1,11 @@
-.About {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  height: auto;
-  padding-top: 60px;
+.AboutPage{
+  .About {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    height: auto;
+    padding-top: 60px;
+  }
 }

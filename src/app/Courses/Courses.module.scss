@@ -1,21 +1,26 @@
-.Courses {
-  padding-top: 60px;
-  .containercurso {
-    text-align: center;
-    padding: 10px 10px 40px 10px;
-    .headingText {
-      padding-bottom: 20px;
-    }
-    .CourseCardContainer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
+
+
+.Courses___{
+  background-color: #9e7c59;
+  .Courses {
+    padding-top: 60px;
+    .containercurso {
+      text-align: center;
+      padding: 10px 10px 40px 10px;
+      .headingText {
+        padding-bottom: 20px;
+      }
+      .CourseCardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
     }
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .Courses {
     padding-top: 60px;
     .containercurso {

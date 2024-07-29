@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './Language_change.module.scss';
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
 import { BiWorld } from "react-icons/bi";
-
 export type Language_changeProps = {
 	// types...
 }

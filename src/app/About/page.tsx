@@ -7,7 +7,7 @@ import { AboutHistoria } from "./Z-componentrs/AboutHistoria";
 
 export default function AboutPage() {
   return (
-    <>
+    <div className={styles.AboutPage}>
       <NavBar />
       <div className={styles.About}>
         <AboutHistoria />
@@ -20,6 +20,6 @@ export default function AboutPage() {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 }

@@ -42,7 +42,7 @@ $paddingGlobal: 30px;
     darken($bgcLightThemeShadownBottom, 30%)
   );
   // display: flex;
-  padding-top: 65px;
+  padding-top: 80px;
 
   .containerIntro {
     max-width: 1500px;
@@ -129,7 +129,7 @@ $paddingGlobal: 30px;
       width: 40%;
 
       .imgContainer {
-        height: 90vw;
+        height: auto;
       }
     }
   }

@@ -84,7 +84,7 @@ const Footer = () => {
 				</div>
 				<div className={styles.bottomBar}>
 					{/* Aquí puedes agregar cualquier información adicional o derechos de autor */}
-					&copy; {new Date().getFullYear()} VeroBlend. Todos los derechos reservados. VeroBlend es una marca registrada de VeroBlend. Prohibida su reproducción total o parcial sin autorización escrita
+					&copy; {new Date().getFullYear()}Todos los derechos reservados. VeroBlend es una marca registrada. Prohibida su reproducción total o parcial sin autorización escrita.
 				</div>
 			</footer>
 		</div>

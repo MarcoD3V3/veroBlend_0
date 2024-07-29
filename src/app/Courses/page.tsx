@@ -53,11 +53,59 @@ const cursos = [
     tags: ["Programación", "Desarrollo web", "JavaScript"],
     imagen: "/logo.png",
   },
+  {
+    id: 7,
+    PCV: "CursoDeProgramacion",
+    nombre: "Curso de Programacion",
+    descripcion: "Aprende a programar desde cero",
+    tags: ["Programación", "Desarrollo web", "JavaScript"],
+    imagen: "/logo.png",
+  },
+  {
+    id: 8,
+    PCV: "CursoDeProgramacion",
+    nombre: "Curso de Programacion",
+    descripcion: "Aprende a programar desde cero",
+    tags: ["Programación", "Desarrollo web", "JavaScript"],
+    imagen: "/logo.png",
+  },
+  {
+    id: 9,
+    PCV: "CursoDeProgramacion",
+    nombre: "Curso de Programacion",
+    descripcion: "Aprende a programar desde cero",
+    tags: ["Programación", "Desarrollo web", "JavaScript"],
+    imagen: "/logo.png",
+  },
+  {
+    id: 10,
+    PCV: "CursoDeProgramacion",
+    nombre: "Curso de Programacion",
+    descripcion: "Aprende a programar desde cero",
+    tags: ["Programación", "Desarrollo web", "JavaScript"],
+    imagen: "/logo.png",
+  },
+  {
+    id: 11,
+    PCV: "CursoDeProgramacion",
+    nombre: "Curso de Programacion",
+    descripcion: "Aprende a programar desde cero",
+    tags: ["Programación", "Desarrollo web", "JavaScript"],
+    imagen: "/logo.png",
+  },
+  {
+    id: 12,
+    PCV: "CursoDeProgramacion",
+    nombre: "Curso de Programacion",
+    descripcion: "Aprende a programar desde cero",
+    tags: ["Programación", "Desarrollo web", "JavaScript"],
+    imagen: "/logo.png",
+  },
 ];
 
 export default function Courses() {
   return (
-    <>
+    <div className={styles.Courses___}>
       <NavBar />
       <div className={styles.Courses}>
         <div className={styles.containercurso}>
@@ -72,6 +120,6 @@ export default function Courses() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
