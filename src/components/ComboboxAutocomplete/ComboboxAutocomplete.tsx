@@ -1,3 +1,4 @@
+"use client";
 import React, { Fragment, useState } from "react";
 import styles from "./ComboboxAutocomplete.module.scss";
 import { Combobox, Transition } from "@headlessui/react";
