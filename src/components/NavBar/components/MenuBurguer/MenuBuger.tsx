@@ -12,6 +12,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
+import Link from "next/link";
 
 const StyledDrawer = styled(Drawer)(({ theme }) => ({
   "& .MuiDrawer-paper": {
@@ -19,7 +20,7 @@ const StyledDrawer = styled(Drawer)(({ theme }) => ({
     [theme.breakpoints.up("sm")]: {
       width: 300,
     },
-    background: "#eebbc3",
+    background: "#BB9265",
     borderRadius: "10px 0px 0px 10px",
   },
 }));
@@ -39,7 +40,8 @@ const MenuBurger: React.FC = () => {
         event &&
         event.type === "keydown" &&
         ((event as React.KeyboardEvent).key === "Tab" ||
-          (event as React.KeyboardEvent).key === "Shift")
+          (event as React.KeyboardEvent).key === "Shift" ||
+          (event as React.KeyboardEvent).key === "space")
       ) {
         return;
       }
@@ -53,13 +55,17 @@ const MenuBurger: React.FC = () => {
         <ListItemIcon>
           <HomeIcon />
         </ListItemIcon>
-        <ListItemText primary="Home" />
+        <Link href="/">
+          <ListItemText primary="Home" />
+        </Link>
       </ListItemButton>
       <ListItemButton>
         <ListItemIcon>
           <InfoIcon />
         </ListItemIcon>
-        <ListItemText primary="About" />
+        <Link href="/About">
+          <ListItemText primary="About" />
+        </Link>
       </ListItemButton>
     </List>
   );

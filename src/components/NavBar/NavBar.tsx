@@ -43,13 +43,12 @@ const NavLinks = () => {
       {paths.map((index) => (
         <li key={index.name}>
           <Link href={index.path}>
-            <p>
-            {index.icon}
-          </p>
-          {index.name}
+            <p>{index.icon}</p>
+            {index.name}
           </Link>
         </li>
       ))}
+      <div></div>
     </ul>
   );
 };
@@ -61,7 +60,13 @@ const NavBar: React.FC = () => {
         <nav className={styles.navbar}>
           <div className={styles.logo}>
             <Link href="/">
-              <Image src="/logo.png" width={60} height={60} alt="veroblend" />
+              <picture>
+                <source
+                  srcSet="/logo_white.svg"
+                  media="(prefers-color-scheme: dark)"
+                />
+                <Image src="/logo.svg" width={60} height={60} alt="veroblend" />
+              </picture>
             </Link>
           </div>
           <div className={`${styles.menu} `}>

@@ -1,6 +1,6 @@
 "use client";
 import styles from "./homePage.module.scss";
-import { NavBar, Footer, Ejemplo } from "@/components/";
+import { NavBar, Footer } from "@/components/";
 // import { Disclosures } from "@/components/Disclosures";
 import Image from "next/image";
 import Link from "next/link";
@@ -35,14 +35,23 @@ export default function HomePage() {
           </div>
           <div className={styles.imgIntro}>
             <div className={styles.imgContainer}>
-              <Image src="/logo.png" width={460} height={460} alt="asd" />
+              <picture>
+                <source
+                  srcSet="/logo_white.svg"
+                  media="(prefers-color-scheme: dark)"
+                />
+                <Image
+                  src="/logo.svg"
+                  width={460}
+                  height={460}
+                  alt="veroblend"
+                />
+              </picture>
             </div>
           </div>
         </div>
       </div>
       <div className={styles.HomePage}>
-        <Ejemplo />
-        <Ejemplo />
         {/* <div className={styles.container}>
 					<div className={styles.homeIntro}>
 						<section className={styles.section}>

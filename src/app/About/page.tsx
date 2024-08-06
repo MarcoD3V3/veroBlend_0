@@ -11,11 +11,8 @@ export default function AboutPage() {
     <>
       <NavBar />
       <div className={styles.About}>
-        <AboutHistoria />
         <div>
-          <div>
-            <CreateUsers />
-          </div>
+          <CreateUsers />
         </div>
         <div>
           <ComboboxAutocomplete />
