@@ -17,6 +17,7 @@ type Course = {
 type CourseCardProps = {
   curso: Course;
 };
+const randomNumber = Math.floor(Math.random() * 4) + 1;
 
 const CourseCard: React.FC<CourseCardProps> = ({ curso }) => {
   const router = useRouter();
@@ -36,7 +37,9 @@ const CourseCard: React.FC<CourseCardProps> = ({ curso }) => {
         <h2 className={styles.TitleCourse}>{curso.nombre}</h2>
         <p className={`${styles.descripcion}`}>{curso.descripcion}</p>
 
-        <div className={`${styles.Tags}`}>
+        <div
+          className={`${styles.Tags} ${styles[`CourseCard-${randomNumber}`]}`}
+        >
           {curso.tags.map((tag) => (
             <span key={tag} className={`${styles.tagName}`}>
               {tag}

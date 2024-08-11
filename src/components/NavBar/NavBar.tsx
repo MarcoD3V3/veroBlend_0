@@ -32,8 +32,8 @@ const paths = [
   },
   {
     icon: <AiFillHome />,
-    name: "Curses",
-    path: "/Curses",
+    name: "Courses",
+    path: "/Courses",
   },
 ];
 
