@@ -2,8 +2,8 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import styles from "./CourseCard.module.scss";
-import { useRouter } from "next/navigation";
+import styles from "./CategoriaCard.module.scss";
+// import { useRouter } from "next/navigation";
 
 type Course = {
   id: number;
@@ -14,13 +14,13 @@ type Course = {
   imagen: string;
 };
 
-type CourseCardProps = {
+type CategoriaCardProps = {
   curso: Course;
+  onOpenModal: () => void;
 };
 const randomNumber = Math.floor(Math.random() * 4) + 1;
 
-const CourseCard: React.FC<CourseCardProps> = ({ curso }) => {
-  const router = useRouter();
+const CategoriaCard: React.FC<CategoriaCardProps> = ({ curso, onOpenModal }) => {
   return (
     <div className={`${styles.CourseCard}`}>
       <div className={`${styles.containerImgCourse}`}>
@@ -37,7 +37,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ curso }) => {
         <h2 className={styles.TitleCourse}>{curso.nombre}</h2>
         <p className={`${styles.descripcion}`}>{curso.descripcion}</p>
 
-        <div
+        <div  
           className={`${styles.Tags} ${styles[`CourseCard-${randomNumber}`]}`}
         >
           {curso.tags.map((tag) => (
@@ -48,10 +48,11 @@ const CourseCard: React.FC<CourseCardProps> = ({ curso }) => {
         </div>
         <div className={styles.containerButtons}>
           <button
+            onClick={onOpenModal}
             className={`${styles.button}`}
-            onClick={() => {
-              router.push(`/Courses/${curso.PCV}`);
-            }}
+            // onClick={() => {
+            //   router.push(`/Courses/${curso.PCV}`);
+            // }}
           >
             Ver más
           </button>
@@ -61,4 +62,4 @@ const CourseCard: React.FC<CourseCardProps> = ({ curso }) => {
   );
 };
 
-export default CourseCard;
+export default CategoriaCard;

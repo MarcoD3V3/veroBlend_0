@@ -91,32 +91,36 @@ const Footer = () => {
             <h3 className={styles.columnTitle}>Síguenos</h3>
             <div className={styles.socialMedia}>
               {/* Aquí puedes agregar tus enlaces a las redes sociales */}
-              <a href="https://twitter.com" target="_blank" rel="noreferrer">
+              <Link href="https://twitter.com" target="_blank" rel="noreferrer">
                 <FaTwitter />
-              </a>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer">
+              </Link>
+              <Link href="https://facebook.com" target="_blank" rel="noreferrer">
                 <FaFacebookF />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+              </Link>
+              <Link href="https://instagram.com" target="_blank" rel="noreferrer">
                 <FaInstagram />
-              </a>
-              <a href="https://www.github.com" target="_blank" rel="noreferrer">
+              </Link>
+              <Link
+                href="https://www.github.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.linkedinin.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaLinkedinIn />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.spotify.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaSpotify />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

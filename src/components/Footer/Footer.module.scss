@@ -1,139 +1,73 @@
+/* 
+  Footer Styles
+  ------------
+  Estilos para el componente Footer, incluyendo:
+  - Layout y estructura
+  - Elementos de navegación
+  - Información de contacto
+  - Redes sociales
+  - Tema claro y oscuro
+*/
+
+// Variables
+$footer-bg-light: #bb9265;
+$footer-bg-dark: #121629;
+$text-light: #000000;
+$text-dark: #b8c1ec;
+$social-bg-light: #5c3b0a49;
+$social-bg-dark: #4a454566;
+
+// Estilos base del Footer
 .Footer {
   width: 100%;
   height: auto;
-  color: #000000;
+  color: $text-light;
 
   .footer {
-    background-color: #bb9265;
-    color: #000000;
+    background-color: $footer-bg-light;
+    color: $text-light;
     padding: 70px 15px;
-    @media (max-width: 1440px) {
-      width: 1440px !important;
-    }
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // Contenedor principal
     .container {
       display: flex;
       flex-wrap: wrap;
+      flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
       max-width: 1200px;
       margin: 0 auto;
-      width: auto;
+      width: 100%;
+
       @media (max-width: 1440px) {
         width: 1440px;
         margin: 0 20px;
       }
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-
-      a {
-        display: flex;
+      @media (max-width: 1230px) {
         width: 100%;
-        justify-content: center;
       }
-    }
-
-    .column {
-      width: 25%;
-      margin-bottom: 40px;
-
       @media (max-width: 768px) {
-        width: 50%;
-      }
-    }
-
-    .columnTitle {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    .navLinks {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-
-      li {
-        margin-bottom: 10px;
-      }
-
-      a {
-        color: #000000;
-        text-decoration: none;
-        transition: color 0.3s ease;
-
-        &:hover {
-          color: #000000;
-        }
-      }
-    }
-
-    .contactInfo {
-      margin-bottom: 10px;
-      color: #000000;
-    }
-
-    .socialMedia {
-      display: flex;
-
-      a {
-        display: inline-flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
-        background-color: #5c3b0a49;
-        color: #000000;
-        border-radius: 50%;
-        font-size: 14px;
-        transition: background-color 0.3s ease;
-
-        &:hover {
-          background-color: #80570049;
-        }
       }
-    }
-
-    .bottomBar {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-    }
-  }
-}
-
-//  DARK
-//  DARK
-//  DARK
-
-@media (prefers-color-scheme: dark) {
-  .Footer {
-    width: 100%;
-    height: auto;
-    color: #b8c1ec;
-
-    .footer {
-      background-color: #121629;
-      color: #fff;
-      padding: 70px 15px;
-
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        max-width: 1200px;
-        margin: 0 auto;
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+      @media (max-width: 425px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      @media (max-width: 320px) {
+        width: 100%;
+        align-items: center;
+      }
+      @media (max-width: 240px) {
+        width: 100%;
       }
 
+      // Logo
       .logo {
         font-size: 24px;
         font-weight: bold;
@@ -149,34 +83,121 @@
         }
       }
 
+      // Columnas del footer
       .column {
         width: 25%;
         margin-bottom: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
 
         @media (max-width: 768px) {
-          width: 50%;
+          width: 100%;
+          text-align: center;
+        }
+        @media (max-width: 425px) {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .columnTitle {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 20px;
         }
       }
 
-      .columnTitle {
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 20px;
+      // Estilo específico para el quinto elemento de la clase `column`
+      .column:nth-of-type(5) {
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        @media (max-width: 425px) {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+        }
       }
+    }
+
+    // Enlaces de navegación
+    .navLinks {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: $text-light;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $text-light;
+        }
+      }
+    }
+
+    // Información de contacto
+    .contactInfo {
+      margin-bottom: 10px;
+      color: $text-light;
+    }
+
+    // Redes sociales
+    .socialMedia {
+      display: flex;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        background-color: $social-bg-light;
+        color: $text-light;
+        border-radius: 50%;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #80570049;
+        }
+      }
+    }
+
+    // Barra inferior
+    .bottomBar {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  }
+}
+
+// Tema oscuro
+@media (prefers-color-scheme: dark) {
+  .Footer {
+    color: $text-dark;
+
+    .footer {
+      background-color: $footer-bg-dark;
+      color: #fff;
 
       .navLinks {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-
-        li {
-          margin-bottom: 10px;
-        }
-
         a {
-          color: #b8c1ec;
-          text-decoration: none;
-          transition: color 0.3s ease;
+          color: $text-dark;
 
           &:hover {
             color: #fffffe;
@@ -185,25 +206,13 @@
       }
 
       .contactInfo {
-        margin-bottom: 10px;
-        color: #b8c1ec;
+        color: $text-dark;
       }
 
       .socialMedia {
-        display: flex;
-
         a {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          width: 30px;
-          height: 30px;
-          margin-right: 10px;
-          background-color: #4a454566;
+          background-color: $social-bg-dark;
           color: #fff;
-          border-radius: 50%;
-          font-size: 14px;
-          transition: background-color 0.3s ease;
 
           &:hover {
             background-color: #7777;

@@ -29,7 +29,16 @@ $neoncolorDarkTheme4: #3f57c4; // Colores de ne√≥n disponibles // Colores de ne√
 $paddingLeft: 50px !important;
 $paddingGlobal: 30px;
 
+.body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 .Intro {
+  -webkit-user-select: none;
   user-select: none;
   width: 100%;
   height: 100vh;
@@ -144,6 +153,7 @@ $paddingGlobal: 30px;
   background-position: center 0;
   background-size: cover;
   position: relative;
+  -webkit-user-select: none;
   user-select: none;
   justify-content: center;
   flex-wrap: wrap;
@@ -312,6 +322,7 @@ $paddingGlobal: 30px;
     background-position: center 0;
     background-size: cover;
     position: relative;
+    -webkit-user-select: none;
     user-select: none;
     justify-content: center;
     flex-wrap: wrap;
@@ -458,6 +469,7 @@ $paddingGlobal: 30px;
     background-position: center 0;
     background-size: cover;
     position: relative;
+    -webkit-user-select: none;
     user-select: none;
     justify-content: center;
     flex-wrap: wrap;
@@ -587,6 +599,7 @@ $paddingGlobal: 30px;
     background-position: center 0;
     background-size: cover;
     position: relative;
+    -webkit-user-select: none;
     user-select: none;
     justify-content: center;
     flex-wrap: wrap;
@@ -712,6 +725,7 @@ $paddingGlobal: 30px;
     background-position: center 0;
     background-size: cover;
     position: relative;
+    -webkit-user-select: none;
     user-select: none;
     justify-content: center;
     flex-wrap: wrap;
@@ -837,6 +851,7 @@ $paddingGlobal: 30px;
     background-position: center 0;
     background-size: cover;
     position: relative;
+    -webkit-user-select: none;
     user-select: none;
     justify-content: center;
     flex-wrap: wrap;

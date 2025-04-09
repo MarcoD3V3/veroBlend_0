@@ -3,6 +3,7 @@
   background-color: #111;
   justify-content: center;
   position: absolute;
+  -webkit-user-select: none;
   user-select: none;
   flex-wrap: wrap;
   height: 100vh;

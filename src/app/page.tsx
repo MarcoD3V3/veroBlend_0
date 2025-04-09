@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function HomePage() {
   const headingTitle = "VeroBlend";
   return (
-    <>
+    <body className={styles.body}>
       <NavBar />
       <div className={styles.Intro}>
         <div className={styles.containerIntro}>
@@ -70,6 +70,6 @@ export default function HomePage() {
 				</div> */}
       </div>
       <Footer />
-    </>
+    </body>
   );
 }
